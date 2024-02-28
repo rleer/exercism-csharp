@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # 
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteControlCompetition", "remote-control-competition\RemoteControlCompetition.csproj", "{0416E05E-F2B2-4B06-A773-222BF57AEF16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautySalonGoesGlobal", "beauty-salon-goes-global\BeautySalonGoesGlobal.csproj", "{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +13,17 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Debug|x64.Build.0 = Debug|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Debug|x86.Build.0 = Debug|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Release|x64.ActiveCfg = Release|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Release|x64.Build.0 = Release|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Release|x86.ActiveCfg = Release|Any CPU
-		{0416E05E-F2B2-4B06-A773-222BF57AEF16}.Release|x86.Build.0 = Release|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Debug|x64.Build.0 = Debug|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Debug|x86.Build.0 = Debug|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Release|x64.ActiveCfg = Release|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Release|x64.Build.0 = Release|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C19B7814-D6AF-4FF5-8F1A-9D1EEED2D28B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
