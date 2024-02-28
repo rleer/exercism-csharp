@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public interface IRemoteControlCar
 {
@@ -11,43 +12,19 @@ public class ProductionRemoteControlCar : IRemoteControlCar, IComparable<Product
 {
     public int DistanceTravelled { get; private set; }
     public int NumberOfVictories { get; set; }
-
-    public void Drive()
-    {
-        DistanceTravelled += 10;
-    }
-
-    public int CompareTo(ProductionRemoteControlCar other)
-    {
-        if (NumberOfVictories == other.NumberOfVictories)
-            return 0;
-        return NumberOfVictories > other.NumberOfVictories ? 1 : -1;
-    }
+    public void Drive() => DistanceTravelled += 10;
+    public int CompareTo(ProductionRemoteControlCar other) => NumberOfVictories.CompareTo(other.NumberOfVictories);
 }
 
 public class ExperimentalRemoteControlCar : IRemoteControlCar
 {
     public int DistanceTravelled { get; private set; }
-
-    public void Drive()
-    {
-        DistanceTravelled += 20;
-    }
+    public void Drive() => DistanceTravelled += 20;
 }
 
 public static class TestTrack
 {
-    public static void Race(IRemoteControlCar car)
-    {
-        car.Drive();
-    }
-
+    public static void Race(IRemoteControlCar car) => car.Drive();
     public static List<ProductionRemoteControlCar> GetRankedCars(ProductionRemoteControlCar prc1,
-        ProductionRemoteControlCar prc2)
-    {
-        var l = new List<ProductionRemoteControlCar> { prc1, prc2 };
-        l.Sort();
-        return l;
-    }
+        ProductionRemoteControlCar prc2) => new[] {prc1, prc2}.OrderBy(c => c).ToList();
 }
-
