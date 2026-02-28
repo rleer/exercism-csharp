@@ -1,5 +1,10 @@
 using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
+var winID = "Eastern Standard Time";
+var conv = TimeZoneInfo.TryConvertWindowsIdToIanaId(winID, out var ianaId);
+Console.WriteLine(ianaId);
 
 public enum Location
 {
@@ -19,12 +24,17 @@ public static class Appointment
 {
     public static DateTime ShowLocalTime(DateTime dtUtc)
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.ShowLocalTime() method");
+        return dtUtc.ToLocalTime();
     }
 
     public static DateTime Schedule(string appointmentDateDescription, Location location)
     {
-        throw new NotImplementedException("Please implement the (static) Appointment.Schedule() method");
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        {
+            var dt = DateTime.Parse(appointmentDateDescription);
+        }
+
+        return new DateTime();
     }
 
     public static DateTime GetAlertTime(DateTime appointment, AlertLevel alertLevel)
